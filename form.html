@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STEM Computer Science Club - Membership Application</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Matrix Canvas Background -->
+  <canvas id="matrixCanvas" class="matrix-bg"></canvas>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo"><img src="https://www.stemcsclub.org/imgs/official-logo.png" alt=""></div>
+      <!-- Optional sign-out button -->
+      <button id="signOut" class="cta-button"><a style="color: #fff; text-decoration: none;" href="https://member.stemcsclub.org">Admission</a></button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <div class="content-wrapper">
+
+      <!-- Application Form -->
+      <section id="apply" class="application-form">
+        <form id="membershipForm" class="form-container" novalidate>
+          <!-- Back Button -->
+          <h2>
+            <!-- <i class="fas fa-code"></i> -->
+            <span class="code-tag">&lt;</span>Membership Application
+            <span class="code-tag">/&gt;</span>
+          </h2>
+
+
+          <!-- Actual Form -->
+          <form id="membershipForm" class="form-container" novalidate>
+            <!-- Step 1: Personal Information -->
+            <div class="form-section active" data-step="1">
+              <h3><i class="fas fa-user-circle"></i> Personal Information:</h3>
+
+              <div class="form-group floating-input-group">
+                <input type="text" id="fullName" name="fullName" placeholder=" " required />
+                <label for="fullName" class="required">Full Name</label>
+              </div>
+
+              <div class="form-group floating-input-group">
+                <input type="tel" id="whatsapp" name="whatsapp" placeholder=" " required />
+                <label for="whatsapp" class="required">WhatsApp Number</label>
+              </div>
+
+
+              <div class="form-group floating-input-group">
+                <input type="email" id="email" name="email" placeholder=" " required />
+                <label for="email" class="required">School Email</label>
+              </div>
+
+              <label class="required">
+                Class
+              </label>
+              <div class="radio-group" style="flex-direction:column ;">
+                <div style="display: flex; justify-content: space-between;">
+                  <div class="radio-option">
+                    <input type="radio" id="10A" name="class" value="10A" required />
+                    <label for="10A">10A</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="10B" name="class" value="10B" required />
+                    <label for="10B">10B</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="10C" name="class" value="10C" required />
+                    <label for="10C">10C</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="10D" name="class" value="10D" required />
+                    <label for="10D">10D</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="10E" name="class" value="10E" required />
+                    <label for="10E">10E</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="10F" name="class" value="10F" required />
+                    <label for="10F">10F</label>
+                  </div>
+
+                </div>
+
+                <div style="display: flex; justify-content: space-between;">
+
+                  <div class="radio-option">
+                    <input type="radio" id="11A" name="class" value="11A" required />
+                    <label for="11A">11A</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="11B" name="class" value="11B" required />
+                    <label for="11B">11B</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="11C" name="class" value="11C" required />
+                    <label for="11C">11C</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="11D" name="class" value="11D" required />
+                    <label for="11D">11D</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="11E" name="class" value="11E" required />
+                    <label for="11E">11E</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="11F" name="class" value="11F" required />
+                    <label for="11F">11F</label>
+                  </div>
+
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+
+                  <div class="radio-option">
+                    <input type="radio" id="12A" name="class" value="12A" required />
+                    <label for="12A">12A</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="12B" name="class" value="12B" required />
+                    <label for="12B">12B</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="12C" name="class" value="12C" required />
+                    <label for="12C">12C</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="12D" name="class" value="12D" required />
+                    <label for="12D">12D</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="12E" name="class" value="12E" required />
+                    <label for="12E">12E</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="12F" name="class" value="12F" required />
+                    <label for="12F">12F</label>
+                  </div>
+                </div>
+              </div>
+
+
+              <label style="margin-top: 20px;display: inline-block;" class="required">
+                Do you have any experience in Web Development?
+              </label>
+              <div class="radio-group">
+                <div class="radio-option">
+                  <input type="radio" id="expYes" name="hasExperience" value="yes" required />
+                  <label for="expYes">Yes</label>
+                </div>
+                <div class="radio-option">
+                  <input type="radio" id="expNo" name="hasExperience" value="no" />
+                  <label for="expNo">No</label>
+                </div>
+              </div>
+
+              <div style="display: flex;
+                  justify-content: end;">
+
+                <button style="margin-top: 20px;display: inline-block;" type="submit" class="next-btn">
+                  Submit </button>
+              </div>
+            </div>
+          </form>
+      </section>
+    </div>
+    </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>2025 STEM Computer Science Club. All rights reserved.</p>
+  </footer>
+
+  <!-- Success Modal -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <i class="fas fa-check-circle"></i>
+      <h2>Submitted!</h2>
+      <p>Thank you for applying to attend the static website workshop! We will reach out to you soon.</p>
+      <div class="loading-bar" id="loadingBar"></div>
+      <button onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <!-- Firebase SDKs & Scripts -->
+  <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore-compat.js"></script>
+
+  <!-- Your external JS -->
+  <script src="form.js"></script>
+</body>
+
+</html>
