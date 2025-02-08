@@ -41,7 +41,14 @@
             <span class="code-tag">&lt;</span> Static Website Workshop
             <span class="code-tag">/&gt;</span>
           </h2>
-
+          <style>
+            @media screen and (max-width:600px) {
+              .containerofclass{
+                flex-wrap: wrap;
+                gap: 10px;
+              }
+            }
+          </style>
 
           <!-- Actual Form -->
           <form id="membershipForm" class="form-container" novalidate>
@@ -69,7 +76,7 @@
                 Class
               </label>
               <div class="radio-group" style="flex-direction:column ;">
-                <div style="display: flex; justify-content: space-between;">
+                <div class="containerofclass" style="display: flex; justify-content: space-between;">
                   <div class="radio-option">
                     <input type="radio" id="10A" name="class" value="10A" required />
                     <label for="10A">10A</label>
@@ -97,7 +104,7 @@
 
                 </div>
 
-                <div style="display: flex; justify-content: space-between;">
+                <div class="containerofclass" style="display: flex; justify-content: space-between;">
 
                   <div class="radio-option">
                     <input type="radio" id="11A" name="class" value="11A" required />
@@ -125,7 +132,7 @@
                   </div>
 
                 </div>
-                <div style="display: flex; justify-content: space-between;">
+                <div class="containerofclass" style="display: flex; justify-content: space-between;">
 
                   <div class="radio-option">
                     <input type="radio" id="12A" name="class" value="12A" required />
